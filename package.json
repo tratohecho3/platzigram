@@ -17,11 +17,13 @@
   },
   "homepage": "https://github.com/tratohecho3/platzigram#readme",
   "dependencies": {
+    "empty-element": "^1.0.0",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
     "materialize-css": "^0.100.2",
     "page": "^1.8.6",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "yo-yo": "^1.4.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
