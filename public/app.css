@@ -6987,5 +6987,15 @@ body {
 .card i {
   font-size: 30px; }
 
-.card .fa-heart {
+.fas {
+  color: red;
+  display: none; }
+
+.far {
   color: #125688; }
+
+.card.liked .fas {
+  display: block; }
+
+.card.liked .far {
+  display: none; }

@@ -94,7 +94,21 @@ $avatar-size: 48px;
 .card i {
   font-size: 30px;
 }
+.fas {
+  color: red;
+  display: none;
+}
+.far {
+  color:$secondary-color;
 
-.card .fa-heart {
-  color: $secondary-color;
+}
+
+.card.liked {
+  .fas{
+    display: block;
+  }
+
+  .far{
+    display: none;
+  }
 }
