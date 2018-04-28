@@ -8,7 +8,39 @@ page('/', function(ctx,next){
     document.title = 'Platzigram';
 
     var main = document.getElementById('main-container');
+    var pictures = [
+        
+        {user:
+            {
+            username: 'user1',
+            avatar: 'http://materializecss.com/images/office.jpg'
+            },
+        url: 'http://materializecss.com/images/office.jpg',
+        likes: 1024,
+        liked: true
+        },
+        {user:
+            {
+            username: 'user2',
+            avatar: 'http://materializecss.com/images/office.jpg'
+            },
+        url: 'http://materializecss.com/images/office.jpg',
+        likes: 10,
+        liked: true
+        },
+        {user:
+            {
+            username: 'user3',
+            avatar: 'http://materializecss.com/images/office.jpg'
+            },
+        url: 'http://materializecss.com/images/office.jpg',
+        likes: 10,
+        liked: true
+        }
+        
     
-    empty(main).appendChild(template);
+    ];
+
+    empty(main).appendChild(template(pictures));
 
 })
