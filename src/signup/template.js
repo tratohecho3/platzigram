@@ -10,7 +10,7 @@ yo`
                 <h2>Registrate para ver fotos de tus amigos estudiando en Platzi</h2>
                 <div class="section">
                     <a href="" class="btn btn-fb hide-on-small-only">Iniciar Sesion con Facebook</a>
-                    <a href="" class="btn btn-fb hide-on-med-and-up">Iniciar Sesion</a>
+                    <a href="" class="btn btn-fb hide-on-med-and-up"><i class="fab fa-facebook-square"></i> Iniciar Sesion</a>
                 </div>
                 <div class="divider"></div>
                 <div class="section">

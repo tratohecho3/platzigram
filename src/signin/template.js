@@ -9,7 +9,7 @@ yo`
             <form class="signup-form">
                 <div class="section">
                     <a href="" class="btn btn-fb hide-on-small-only">Iniciar Sesion con Facebook</a>
-                    <a href="" class="btn btn-fb hide-on-med-and-up">Iniciar Sesion</a>
+                    <a href="" class="btn btn-fb hide-on-med-and-up"><i class="fab fa-facebook-square"></i> Iniciar Sesion</a>
                 </div>
                 <div class="divider"></div>
                 <div class="section">
