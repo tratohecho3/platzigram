@@ -17,7 +17,8 @@ page('/', function(ctx,next){
             },
         url: 'http://materializecss.com/images/office.jpg',
         likes: 1024,
-        liked: true
+        liked: true,
+        createdAt: new Date()   
         },
         {user:
             {
@@ -26,7 +27,8 @@ page('/', function(ctx,next){
             },
         url: 'http://materializecss.com/images/office.jpg',
         likes: 10,
-        liked: true
+        liked: true,
+        createdAt: new Date(2018, 4, 14, 10, 33, 30, 0)
         },
         {user:
             {
@@ -35,7 +37,8 @@ page('/', function(ctx,next){
             },
         url: 'http://materializecss.com/images/office.jpg',
         likes: 10,
-        liked: false
+        liked: false,
+        createdAt: new Date() 
         }
         
     
