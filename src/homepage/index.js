@@ -1,49 +1,34 @@
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
-//var title = require('title');
+var title = require('title');
 
-page('/', function(ctx,next){
-    //title('Platzigram - Signin');
-    document.title = 'Platzigram';
+page('/', function (ctx, next) {
+  title('Platzigram');
+  var main = document.getElementById('main-container');
 
-    var main = document.getElementById('main-container');
-    var pictures = [
-        
-        {user:
-            {
-            username: 'user1',
-            avatar: 'http://materializecss.com/images/office.jpg'
-            },
-        url: 'http://materializecss.com/images/office.jpg',
-        likes: 1024,
-        liked: true,
-        createdAt: new Date()   
-        },
-        {user:
-            {
-            username: 'user2',
-            avatar: 'http://materializecss.com/images/office.jpg'
-            },
-        url: 'http://materializecss.com/images/office.jpg',
-        likes: 10,
-        liked: true,
-        createdAt: new Date(2018, 4, 14, 10, 33, 30, 0)
-        },
-        {user:
-            {
-            username: 'user3',
-            avatar: 'http://materializecss.com/images/office.jpg'
-            },
-        url: 'http://materializecss.com/images/office.jpg',
-        likes: 10,
-        liked: false,
-        createdAt: new Date() 
-        }
-        
-    
-    ];
+  var pictures = [
+    {
+      user: {
+        username: 'slifszyc',
+        avatar: 'office.jpg'
+      },
+      url: 'office.jpg',
+      likes: 0,
+      liked: false,
+      createdAt: new Date().getTime()
+    },
+    {
+      user: {
+        username: 'slifszyc',
+        avatar: 'office.jpg'
+      },
+      url: 'office.jpg',
+      likes: 1,
+      liked: true,
+      createdAt: new Date().setDate(new Date().getDate() - 10)
+    }
+  ];
 
-    empty(main).appendChild(template(pictures));
-
+  empty(main).appendChild(template(pictures));
 })
